@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>Saeed Firouzi</title>
+	{% load static %}
+<link rel="stylesheet" href="{%  static  'style.css'  %}" type="text/css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+</head>
+
+<body>
+<div id="wrap">
+	{% load static %}
+	<div id="header" style="background-image:url('{%static 'back1.jpg' %}');margin-top:-10px;">
+	<div id="header-content">
+
+		<h1 id="logo"><a href="/" >Saeed<span class="gray">Firouzi</span></a></h1>
+
+		<!-- Menu Tabs -->
+		<div>
+		<ul>
+			<li><a href="/" id="current">Home</a></li>
+			<li><a href="/blog">Blog</a></li>
+			<li><a href="/projects">Projects</a></li>
+
+		</ul>
+
+		</div>
+
+
+	</div>
+		<h4 style="font-size:20px;">
+			{% if user.is_authenticated %}
+			<span class="gray"><button>Hi {{user.username}}</button></span>&nbsp;<a href="/accounts/logout"><button>Log out</button></a>
+				<!-- <a href="accounts/password_change">password_change</a> -->
+
+			{% else %}
+			<a href="/accounts/login" ><button>Log In</button></a>&nbsp;<a href="/accounts/signup"><button>Sign Up</button></a>
+			{% endif %}
+		</h4>
+	</div>
+
+	<div class="headerphoto"></div>
+
+	<!-- content-wrap starts here -->
+	<div id="content-wrap"><div id="content">
+
+		<div id="sidebar" >
+
+			<div class="sidebox">
+
+				<h1>Contact</h1>
+				<p>sharif university
+				</p>
+				<p><strong>E-mail:</strong> saeedmr881@gmail.com</p>
+                <p><strong>Download CV:</strong> <a href="cv">RESUME</a></p>
+			</div>
+			<div class="sidebox">
+
+				<h1>Social</h1>
+				<p>
+				<a href="http://es.linkedin.com/pub/daniel-garijo/7/b17/a77">LinkedIn</a>, <a href="https://twitter.com/dgarijov">Twitter</a>, <a href="http://www.slideshare.net/dgarijo">Slideshare</a>, <a href="http://linkingresearch.wordpress.com/">Linking Research (blog)</a>.</p>
+				<h1>Publications</h1>
+				<p>
+				<a href="http://scholar.google.es/citations?user=meb5L6oAAAAJ">Google Scholar </a>, <a href="http://orcid.org/0000-0003-0454-7145">ORCID</a>, <a href="https://www.researchgate.net/profile/Daniel_Garijo/">Research Gate</a>, <a href="http://www.mendeley.com/profiles/daniel-garijo/">Mendeley</a>, <a href="http://dblp.uni-trier.de/pers/hd/g/Garijo:Daniel.html">DBLP</a>, <a href="https://impactstory.org/u/0000-0003-0454-7145">ImpactStory</a>.
+				</p>
+				<h1>Software</h1>
+				<p>
+				<a href="https://github.com/dgarijo/">Github</a>, <a href="http://stackoverflow.com/users/3772440/daniel-garijo">Stack Overflow answers</a>, <a href="http://dgarijo.github.io/Vocabularies/">Vocabularies</a>.
+				</p>
+				<h1>Data</h1>
+				<p><a href="http://figshare.com/authors/Daniel%20Garijo/447977">FigShare</a>, <a href="https://zenodo.org/search?page=1&size=20&q=Daniel%20Garijo">Zenodo</a>, <a href="http://dgarijo.github.io/ResearchObjects/">Research Objects</a>.</p>
+			</div>
+
+		</div>
+
+		<div id="main">
+
+			<div class="post">
+
+				<a name="TemplateInfo"></a>
+
+                <p>{% load static %}<img src="{% static '6.jpg' %}" WIDTH="470" HEIGHT="300" alt="Daniel Garijo" property="foaf:img schema:image" resource="http://delicias.dia.fi.upm.es/members/DGarijo/images/daniPic.jpg" />
+				</p>
+
+				<p style="font-size:15px;background-color:green;">
+				{% load static %}
+				<p style="border:2px solid grey;padding: 20px;" class="sidebox">
+				<b>	Hello
+					<br>Do you want to know about me?</b>
+
+					<br>.you can read this below passage or
+					<br>.you can see my resume in right hand of the page
+					<br>.see my github
+					<br>.follow me in twitter and telegram
+				</p>
+				<p style="border:2px solid grey;padding: 20px;" class="sidebox">
+					I am a junior data scientist that have graduated in Sharif university in
+					electrical engineering in Iran.
+					<br>
+
+				</p>
+				</p>
+
+			</div>
+
+		</div>
+
+	<!-- content-wrap ends here -->
+	</div></div>
+
+<!-- footer starts here -->
+<div id="footer">
+<div id="footer-content" style="text-align: center;">
+	<p>The web site template used in this page is attributed to <a href="http://www.bluewebtemplates.com/" title="Website Templates" >website templates</a> (by <a href="http://www.styleshout.com/">styleshout</a>) <br /></p>
+</div>
+</div>
+<!-- footer ends here -->
+
+<!-- wrap ends here -->
+</div>
+
+</body>
+</html>

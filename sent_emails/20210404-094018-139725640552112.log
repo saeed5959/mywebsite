@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: saeedm@gmail.com
+Date: Sun, 04 Apr 2021 09:40:18 -0000
+Message-ID: <161752921813.11203.11574388088978574725@saeed-HP-ProBook-450-G2>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/Ng/akkqv6-fb2ec3e42f628dac6ec92449a4b25eba/
+
+Your username, in case you’ve forgotten: dad
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

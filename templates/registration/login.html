@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+        <title>Saeed Firouzi</title>
+            {% load static %}
+        <link rel="stylesheet" href="{%  static  'style.css'  %}" type="text/css" />
+
+</head>
+
+<body>
+<div id="wrap">
+
+	{% load static %}
+	<div id="header" style="background-image:url('{%static 'back1.jpg' %}');margin-top:-10px;">
+	<div id="header-content">
+
+		<h1 id="logo"><a href="/" >Saeed<span class="gray">Firouzi</span></a></h1>
+
+		<!-- Menu Tabs -->
+		<div>
+		<ul>
+			<li><a href="/" id="current">Home</a></li>
+			<li><a href="/blog">Blog</a></li>
+			<li><a href="/projects">Projects</a></li>
+
+		</ul>
+
+		</div>
+
+
+	</div>
+		<h4 style="font-size:20px;">
+			{% if user.is_authenticated %}
+			<span class="gray"><button>Hi {{user.username}}</button></span>&nbsp;<a href="/accounts/logout"><button>Log out</button></a>
+				<!-- <a href="accounts/password_change">password_change</a> -->
+
+			{% else %}
+			<a href="/accounts/login" ><button>Log In</button></a>&nbsp;<a href="/accounts/signup"><button>Sign Up</button></a>
+			{% endif %}
+		</h4>
+	</div>
+
+	<div class="headerphoto"></div>
+
+	<!-- content-wrap starts here -->
+	<div id="content-wrap"><div id="content">
+
+
+
+		<div id="main">
+
+			<form method="POST">{% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Log In</button>
+
+            </form>
+                &nbsp;&nbsp;&nbsp;&nbsp;<a href="/accounts/signup"><button>Sign Up</button></a>&nbsp;<a href="/accounts/password_reset/"><button>forgot_pass?</button></a>
+
+		</div>
+
+
+	<!-- content-wrap ends here -->
+	</div></div>
+
+<!-- footer starts here -->
+<div id="footer">
+<div id="footer-content" style="text-align: center;">
+	<p>The web site template used in this page is attributed to <a href="http://www.bluewebtemplates.com/" title="Website Templates" >website templates</a> (by <a href="http://www.styleshout.com/">styleshout</a>) <br /></p>
+</div>
+</div>
+<!-- footer ends here -->
+
+<!-- wrap ends here -->
+</div>
+
+</body>
+</html>
