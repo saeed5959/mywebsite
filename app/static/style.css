@@ -154,7 +154,7 @@ input.button {
 	margin: 0; 
 	font: bold 1em Arial, Sans-serif; 
 	background: #FFF url(gradientbg.jpg) repeat-x; 
-	padding: 2px 3px; 
+	padding: 2px 3px;
 	color: #333;	
 	border: 1px solid #DADADA;	
 }
@@ -257,6 +257,7 @@ input.button {
 	background: #65944A;
 	color: #FFF;
 }
+
 
 /* header photo */
 .headerphoto {

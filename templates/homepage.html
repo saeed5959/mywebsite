@@ -35,6 +35,7 @@
 		<h4 style="font-size:20px;">
 			{% if user.is_authenticated %}
 			<span class="gray"><button>Hi {{user.username}}</button></span>&nbsp;<a href="/accounts/logout"><button>Log out</button></a>
+			<a href="/accounts/panel"><button>Panel</button></a>
 				<!-- <a href="accounts/password_change">password_change</a> -->
 
 			{% else %}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>Saeed Firouzi</title>
+	{% load static %}
+<link rel="stylesheet" href="{%  static  'style.css'  %}" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+    form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+<div id="wrap">
+
+	{% load static %}
+	<div id="header" style="background-image:url('{%static 'back1.jpg' %}');margin-top:-10px;">
+	<div id="header-content">
+
+		<h1 id="logo"><a href="/" >Saeed<span class="gray">Firouzi</span></a></h1>
+
+		<!-- Menu Tabs -->
+		<div>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/blog">Blog</a></li>
+			<li><a href="/projects">Projects</a></li>
+
+		</ul>
+
+		</div>
+
+
+	</div>
+		<h4 style="font-size:20px;">
+			{% if user.is_authenticated %}
+			<span class="gray"><button>Hi {{user.username}}</button></span>&nbsp;<a href="/accounts/logout"><button>Log out</button></a>
+				<!-- <a href="accounts/password_change">password_change</a> -->
+
+			{% else %}
+			<a href="/accounts/login" ><button>Log In</button></a>&nbsp;<a href="/accounts/signup"><button>Sign Up</button></a>
+			{% endif %}
+		</h4>
+	</div>
+
+<!-- The form -->
+<form class="example" method="POST" style="margin:5px;max-width:227px;float:right;margin-right: 262px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+
+	<div class="headerphoto"></div>
+ <!-- Load icon library -->
+
+
+	<!-- content-wrap starts here -->
+	<div id="content-wrap"><div id="content">
+
+		<div id="sidebar" >
+
+			<div class="sidebox">
+
+				<h1>Hi {{user.username}}</h1>
+				<p>
+				</p>
+
+			<li style="font-size:20px;"><a href="/">Home</a></li>
+			<li><a href="/blog" >Blog</a></li>
+			<li><a href="/projects">Projects</a></li>
+
+
+				<li><strong><a href="accounts/panel/info" id="current">personal information</a></strong></li>
+                <p><strong>Download CV:</strong> <a href="cv">RESUME</a></p>
+			</div>
+
+
+		</div>
+
+		<div id="main">
+
+			<div class="post">
+
+				<h1>Projects</h1>
+        <p>During my career I have participated in the following projects:</p>
+
+        <br />
+        <div class="center"><a href="https://wildfire.mint.isi.edu/">
+        <img width="300" src="images/wildfire.png" alt="MINT-Wildfire" /></a></div>
+
+        <ul>
+        <li>
+        <a href="https://wildfire.mint.isi.edu/">Artificial Intelligence and Community Driven Wildland Fire Innovation via a WIFIRE Commons Infrastructure for Data and Model Sharing</a>:
+        This project is creating a data-driven, artificial intelligence (AI) enabled and model-based scientific approach that ultimately aims to limit and even prevent the devastating effects of wildfires by using advanced technologies to support fire mitigation, preparedness, response, and recovery. (Sept 2020 - May 2021).</li>
+
+        </ul>
+                <br />
+
+
+
+
+				<p>
+
+				</p>
+
+			</div>
+
+		</div>
+
+	<!-- content-wrap ends here -->
+	</div></div>
+
+<!-- footer starts here -->
+<div id="footer">
+<div id="footer-content" style="text-align: center;">
+	<p>The web site template used in this page is attributed to <a href="http://www.bluewebtemplates.com/" title="Website Templates" >website templates</a> (by <a href="http://www.styleshout.com/">styleshout</a>) <br /></p>
+</div>
+</div>
+<!-- footer ends here -->
+
+<!-- wrap ends here -->
+</div>
+
+</body>
+</html>

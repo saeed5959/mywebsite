@@ -56,7 +56,7 @@ ROOT_URLCONF = 'main.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["/home/saeed/software/python/real/main/templates"],
+        'DIRS': ["/home/saeed/software/python/real/main/mywebsite/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
