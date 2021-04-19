@@ -28,6 +28,7 @@ urlpatterns = [
     path('accounts/panel', views.panel),
     path('accounts/panel/info', views.panel_info),
     path('accounts/panel/credit', views.panel_credit),
+    path('accounts/panel/credit/pay', views.panel_credit_pay),
     path('accounts/panel/comment', views.panel_comment),
     path('cv', views.cv),
     path('blog', views.blog),

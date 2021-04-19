@@ -71,6 +71,10 @@ def panel_credit(request):
     t = loader.get_template('panel_credit.html')
     return HttpResponse(t.render({}, request))
 
+@login_required(login_url='/accounts/login')
+def panel_credit_pay(request):
+    t = loader.get_template('panel_credit_pay.html')
+    return HttpResponse(t.render({}, request))
 
 from django.urls import reverse
 from azbankgateways import bankfactories, models as bank_models, default_settings as settings
