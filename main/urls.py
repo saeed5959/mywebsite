@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from app import views
+from azbankgateways.urls import az_bank_gateways_urls
+
+admin.autodiscover()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,4 +31,5 @@ urlpatterns = [
     path('accounts/panel/comment', views.panel_comment),
     path('cv', views.cv),
     path('blog', views.blog),
+    path('bankgateways/', az_bank_gateways_urls()),
 ]

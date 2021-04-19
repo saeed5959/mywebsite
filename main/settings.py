@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'app.apps.AppConfig',
+    'azbankgateways',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -129,3 +130,42 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = str(BASE_DIR.joinpath('sent_emails'))
+
+
+AZ_IRANIAN_BANK_GATEWAYS = {
+   'GATEWAYS': {
+       'BMI': {
+           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
+           'TERMINAL_CODE': '<YOUR TERMINAL CODE>',
+           'SECRET_KEY': '<YOUR SECRET CODE>',
+       },
+       'SEP': {
+           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
+           'TERMINAL_CODE': '<YOUR TERMINAL CODE>',
+       },
+       'ZARINPAL': {
+           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
+       },
+       'IDPAY': {
+           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
+           'METHOD': 'POST',  # GET or POST
+           'X_SANDBOX': 0,  # 0 disable, 1 active
+       },
+       'ZIBAL': {
+           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
+       },
+       'BAHAMTA': {
+           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
+       },
+   },
+   'DEFAULT': 'BMI',
+   'CURRENCY': 'IRR', # اختیاری
+   'TRACKING_CODE_QUERY_PARAM': 'tc', # اختیاری
+   'TRACKING_CODE_LENGTH': 16, # اختیاری
+   'SETTING_VALUE_READER_CLASS': 'azbankgateways.readers.DefaultReader', # اختیاری
+   'BANK_PRIORITIES': [
+       'BMI',
+       'SEP',
+       # and so on ...
+   ], # اختیاری
+}

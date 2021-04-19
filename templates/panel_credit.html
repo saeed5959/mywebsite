@@ -104,9 +104,9 @@ form.example::after {
 				<p>
 				</p>
                 <ul style="font-size:15px;">
-			<li><a href="accounts/panel/info">Personal-Info</a></li>
-			<li><a href="accounts/panel/credit" >Your Credit</a></li>
-			<li><a href="accounts/panel/comment">Comments</a></li>
+			<li><a href="/accounts/panel/info">Personal-Info</a></li>
+			<li><a href="/accounts/panel/credit" >Your Credit</a></li>
+			<li><a href="/accounts/panel/comment">Comments</a></li>
 
 		</ul>
 
@@ -119,8 +119,23 @@ form.example::after {
 
 			<div class="post">
 
+				<div class="center">
 				<h1>PANEL</h1>
-				<p style="font-size:15px"><strong>You can choose from right box to edit your account</strong></p>
+				<p style="font-size:15px"><strong>You can charge your account.</strong></p>
+
+				<form action="/bankgateways/go-to-bank-gateway/" method="POST">{% csrf_token %}
+			  <div class="row">
+				<div class="col-25">
+				  <label for="fname">how much do you want to pay?</label>
+				</div>
+				<div class="col-75">
+				  <input type="int" id="fname" name="price" >
+				</div>
+			  </div>
+				<div class="row">
+				<input type="submit" value="Submit">
+			  </div>
+			  </form>
 
         <br />
         <div class="center"><a href="https://wildfire.mint.isi.edu/">
@@ -132,7 +147,7 @@ form.example::after {
 			</div>
 
 		</div>
-
+		</div>
 	<!-- content-wrap ends here -->
 	</div></div>
 
