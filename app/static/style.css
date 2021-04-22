@@ -264,8 +264,7 @@ input.button {
 	/*margin: 0 auto;
 	width: 770px;
 	height: 200px;*/
-	padding: 5px; 
-	/*background: #FFF url(headerphoto.jpg) no-repeat center;	*/
+	padding: 5px;
 }
 
 /* content */
@@ -338,9 +337,6 @@ input.button {
 	border-bottom: 1px solid #f2f2f2; 	
 	font: normal 1.8em 'Trebuchet MS', Tahoma, Sans-serif;
 }
-#main ul li {
-	list-style-image: url(bullet.gif);
-}
 
 .post {
 	margin: 0; padding: 0;
@@ -354,15 +350,15 @@ input.button {
 	font-size: 95%;
 }
 .post .post-footer .date {
-	background: url('clock.gif') no-repeat 0 center;
+	background: no-repeat 0 center;
 	padding-left: 20px; margin: 0 10px 0 5px;
 }
 .post .post-footer .comments {
-	background: url('comment.gif') no-repeat 0 center;
+	background: no-repeat 0 center;
 	padding-left: 20px; margin: 0 10px 0 5px;
 }
 .post .post-footer .readmore {
-	background: url('page.gif') no-repeat 0 center;
+	background:  no-repeat 0 center;
 	padding-left: 20px; margin: 0 10px 0 5px;
 }
 
