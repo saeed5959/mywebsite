@@ -153,7 +153,7 @@ textarea {
 input.button { 
 	margin: 0; 
 	font: bold 1em Arial, Sans-serif; 
-	background: #FFF url(gradientbg.jpg) repeat-x; 
+	background: #FFF repeat-x;
 	padding: 2px 3px;
 	color: #333;	
 	border: 1px solid #DADADA;	
@@ -344,7 +344,7 @@ input.button {
 
 .post {
 	margin: 0; padding: 0;
-	background: #FFF url(gradientbg.jpg) repeat-x;
+	background: #FFF repeat-x;
 	border: 1px solid #EFEDED;
 }
 .post .post-footer {
