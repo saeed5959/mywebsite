@@ -28,6 +28,10 @@ def blog(request):
     t = loader.get_template('blog.html')
     return HttpResponse(t.render({}, request))
 
+def projects(request):
+    t = loader.get_template('projects.html')
+    return HttpResponse(t.render({}, request))
+
 def search(request):
     t = loader.get_template('search.html')
     return HttpResponse(t.render({}, request))

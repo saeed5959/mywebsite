@@ -32,5 +32,6 @@ urlpatterns = [
     path('accounts/panel/comment', views.panel_comment),
     path('cv', views.cv),
     path('blog', views.blog),
+    path('projects', views.projects),
     path('bankgateways/', az_bank_gateways_urls()),
 ]
