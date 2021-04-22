@@ -152,7 +152,7 @@ AZ_IRANIAN_BANK_GATEWAYS = {
            'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
        },
        'IDPAY': {
-           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
+           'MERCHANT_CODE': '59ce2e31-e88c-4469-92d5-dd040b33f10d',
            'METHOD': 'POST',  # GET or POST
            'X_SANDBOX': 0,  # 0 disable, 1 active
        },
@@ -163,7 +163,7 @@ AZ_IRANIAN_BANK_GATEWAYS = {
            'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
        },
    },
-   'DEFAULT': 'BMI',
+   'DEFAULT': 'IDPAY',
    'CURRENCY': 'IRR', # اختیاری
    'TRACKING_CODE_QUERY_PARAM': 'tc', # اختیاری
    'TRACKING_CODE_LENGTH': 16, # اختیاری
